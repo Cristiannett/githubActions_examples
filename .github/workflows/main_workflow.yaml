@@ -36,3 +36,14 @@ jobs:
       - name: Run jest tests
         run: npm install jest
           npm test
+
+  job3:
+    name: environment_test_execution
+    runs-on: ubuntu-latest
+    needs: [job1, job2]
+    steps:
+      - name: Saludo
+        uses: adeloyedeji/github-actions-hello@v1.0
+      - run: echo 'Hi ${{ env.DESTINATION_PERSON }}' 
+        env:
+          DESTINATION_PERSON: 2DAW
