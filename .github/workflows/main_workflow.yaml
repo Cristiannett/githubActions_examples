@@ -1,9 +1,9 @@
-name: SegundaActividadd
+name: Github Actions. Prueba con variables de entorno
 
 on:
   push:
     branches:
-      - nodejs_nodeversions_job
+      - nodejs_environment_job
 
 jobs:
   job1:
