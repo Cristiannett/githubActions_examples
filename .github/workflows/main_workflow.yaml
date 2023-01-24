@@ -23,6 +23,7 @@ jobs:
   job2:
     runs-on: ubuntu-latest
     name: Deploy
+    needs: job1
     steps:
       - name: descargar artifacts
         uses: actions/download-artifact@v2
