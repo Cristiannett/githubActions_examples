@@ -1,0 +1,31 @@
+name: Github Actions. Build y despliegue en surge
+
+on:
+  push:
+    branches:
+      - react_app_deploy
+
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    name: Build
+    steps:
+      - name: obtener código
+        uses: actions/checkout@v2
+
+      - name: crear los estáticos
+        run: npm install
+          npm run build
+
+      - name: subir artefactos
+        uses: actions/upload-artifact@v2
+
+  job2:
+    runs-on: ubuntu-latest
+    name: Deploy
+    steps:
+      - name: descargar artifacts
+        uses: actions/download-artifact@v2
+
+      - name: desplegar artefactos
+        uses: dswistowski/surge-sh-action@v1
