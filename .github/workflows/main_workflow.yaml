@@ -18,7 +18,9 @@ jobs:
           npm run build
 
       - name: subir artefactos
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
+        with:
+          path: .next/
 
   job2:
     runs-on: ubuntu-latest
