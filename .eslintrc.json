@@ -9,8 +9,5 @@
   },
   "rules": {
 
-  },
-  "scripts": {
-    "test": "jest"
   }
 }
