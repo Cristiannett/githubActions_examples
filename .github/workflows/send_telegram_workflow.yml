@@ -18,4 +18,4 @@ jobs:
       - name: run action
         uses: Cristiannett/githubActions_examples@v2
         with:
-          who-to-greet: "Cristian"
+          who-to-greet: "Crisstian"
