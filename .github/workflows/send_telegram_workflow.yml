@@ -16,7 +16,7 @@ jobs:
     needs: job1
     steps:
       - name: run action
-        uses: ./
+        uses: Cristiannett/githubActions_examples@v1
         with:
           Default: ${{ github.repository }}
           who-to-greet: "Cristian"
