@@ -18,5 +18,4 @@ jobs:
       - name: run action
         uses: Cristiannett/githubActions_examples@v1
         with:
-          Default: ${{ github.repository }}
           who-to-greet: "Cristian"
