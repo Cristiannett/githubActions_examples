@@ -18,4 +18,5 @@ jobs:
       - name: run action
         uses: ./
         with:
+          Default: ${{ github.repository }}
           who-to-greet: "Cristian"
