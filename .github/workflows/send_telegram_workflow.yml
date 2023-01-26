@@ -1,0 +1,20 @@
+name: Github Actions. Custom Action para envío de mensajes en Telegram
+on:
+  push:
+    branches:
+      - send_telegram_action
+jobs:
+  job1:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: send telegram message on push
+        uses: actions/checkout@v2
+  job2:
+    name: Run
+    runs-on: ubuntu-latest
+    steps:
+      - name: run action
+        uses: ./
+        with:
+          who-to-greet: "Cristian"
