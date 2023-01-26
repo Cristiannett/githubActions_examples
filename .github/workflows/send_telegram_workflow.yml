@@ -16,6 +16,6 @@ jobs:
     needs: job1
     steps:
       - name: run action
-        uses: Cristiannett/githubActions_examples@v1
+        uses: Cristiannett/githubActions_examples@v2
         with:
           who-to-greet: "Cristian"
