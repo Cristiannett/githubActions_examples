@@ -1,4 +1,4 @@
-name: Github Actions. Custom Action para modificar el readme de nuestro proyecto
+name: Github Actions. Custom Action para modificar el readme de nuestro proyecto.
 
 on:
   push:
