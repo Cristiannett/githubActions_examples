@@ -1,13 +1,18 @@
 name: "Hello World"
 description: "Greet someone and record the time"
 inputs:
-  who-to-greet: # id of input
-    description: "Who to greet"
+  frase_positiva: # id of input
+    description: "frase_positiva"
     required: true
-    default: "Admin"
-outputs:
-  time: # id of output
-    description: "The time we greeted you"
+    default: "Los tests han funcionado y lo sabes"
+  frase_negativa: # id of input
+    description: "frase_negativa"
+    required: true
+    default: "Los tests han fallado y lo sabes"
+  resultado_tests: # id of input
+    description: "resultado_tests"
+    required: true
+    default: "Resultado"
 runs:
   using: "node16"
   main: "index.js"
