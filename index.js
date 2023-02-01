@@ -1,3 +1,4 @@
+const fs = require('fs').promises
 const core = require('@actions/core')
 const github = require('@actions/github')
 
@@ -17,8 +18,11 @@ const resultado_tests = core.getInput('resultado_tests');
 let texto_meme;
 if (resultado_tests) {
     texto_meme = frase_positiva;
+    fs.writeFile('./readme.md', texto_meme)
+
 } else {
     texto_meme = frase_negativa;
+    fs.writeFile('./readme.md', texto_meme)
 }
 console.log(texto_meme);
 
