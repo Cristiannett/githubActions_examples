@@ -31,7 +31,7 @@ jobs:
           test_result: ${{ needs.job1.outputs.test_result }}
 
       - name: Commit changes
-        uses: actions/add-and-commit@v7
+        uses: actions/commit-changes@v1
         with:
           branch: github_action_readme
           commit-message: Actualizar README con meme de resultados de pruebas
